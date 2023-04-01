@@ -1,0 +1,52 @@
+.gitName {
+    font-size: 120px;
+    font-family: 'Source Code Pro', sans-serif; 
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 45+95px;
+    margin-bottom: -15px;
+
+    animation: introLoad 2s forwards;
+}
+
+.coba {
+    margin-bottom: 100px;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Source Code Pro', sans-serif;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    animation: introLoad 2s forwards;
+}
+
+@keyframes introLoad {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    
+    .gitName {
+        font-size: 80px;
+    }
+
+    .desc {
+        font-size: 20px;
+    }
+   
+}

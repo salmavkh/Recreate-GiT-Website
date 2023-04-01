@@ -1,0 +1,58 @@
+
+.upcoming-events {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Source Code Pro', sans-serif;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 45px;
+    
+}
+
+.desc-upcoming {
+    display: flex;
+}
+
+.hackurskills {
+    width: 450px;
+    margin-left: 75px;
+}
+
+.hack-desc {
+    width: 1000px;
+    font-size: 20px;
+    font-family: 'Source Code Pro', sans-serif;
+    margin-left: 50px;
+    vertical-align: middle;
+}
+
+.checkered-top {
+    margin-top: 75px;
+    height: 100px;
+    width: 1875px;
+    overflow: hidden;
+    margin-left: -95px;
+    margin-right: -95px;
+    object-fit: cover;
+    
+}
+
+@media only screen and (max-width: 680px) {
+    
+    .hackurskills {
+        width: 350px;
+        margin-left: 35px;
+    }
+
+    .desc-upcoming {
+        display: block;
+    }
+
+    .hack-desc {
+        margin-top: 0px;
+        width: 320px;
+    }
+   
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;800&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/general.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/body_aboutUs.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="left-section">
+            <button class="gitLogoHeader">
+                <a href="./0_main.html">
+                    <img class="logo" src="./image/gitLogo.png">
+                </a>
+            </button>
+        </div>
+        <div class="right-section">
+            <nav>
+                <img class="close" src="./image/close-round-icon.png">
+                 
+                <ul>
+                    <li><a class="submenu" href="./1_aboutUs.html">About Us</a></li>
+                    <li><a class="submenu" href="./2_events.html">Events</a></li>
+                    <li><a class="submenu" href="./3_opportunities.html">Opportunities</a></li>
+                    <li><a class="submenu" href="./4_resources.html">Resources</a></li>
+                    <li><a class="submenu" href="./5_contactUs.html">Contact Us</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+        <img class="hamburger" src="./image/hamburger-menu-icon.png "> 
+        
+    </div>
+
+    <div style=" margin-top: 75px;">
+        <img class="checkered-left" src="./image/bckground.jpg" style="height: 360px; object-fit: cover;">
+        <p class="about-us">
+            We are a student chapter of the Association for Computing Machinery's Council on<br>Women in Computing (ACM-W), located in the University of British Columbia, Okanagan Campus.<br>
+            We aim to address the breach between girls in technology-related fields and the opportunities available for them.
+        </p>
+        <img class="checkered-left" src="./image/bckground.jpg" style="height: 360px; object-fit: cover;">
+    </div>
+    
+    <!-- to animate hamburger menu -->
+    <script>
+        const menu = document.querySelector('.hamburger');
+        const close = document.querySelector('.close');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav');
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav');
+        })
+ 
+    </script>
+
+
+</body>
+
+</html>

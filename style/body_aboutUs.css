@@ -1,0 +1,37 @@
+.checkered-left {
+    width: 1875px;
+    height: 945px;
+    margin-left: -100px;
+    overflow: hidden;
+    display: block;
+    animation: introLoad 2s forwards;
+}
+
+.about-us {
+    font-size: 22px;
+    font-family: 'Source Code Pro', sans-serif;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    animation: introLoad 2s forwards;
+}
+
+@media only screen and (max-width: 680px) {
+    
+    .checkered-left {
+        width: 980px;
+        height: 672px;
+    }
+   
+}
+
+@keyframes introLoad {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
